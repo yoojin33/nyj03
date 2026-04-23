@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오 | 남유진</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">Yoojin's Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#assignments">과제</a></li>
+        <li><a href="#team">팀 프로젝트</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#about" onclick="closeDrawer()">소개</a>
+      <a href="#assignments" onclick="closeDrawer()">과제</a>
+      <a href="#team" onclick="closeDrawer()">팀 프로젝트</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero" style="position: relative">
+      <p class="hero-greeting">// 남유진의 포트폴리오 페이지에 오신 걸 환영합니다!</p><br />
+      <h1 class="hero-name">남유진</h1>
+      <br />
+      <p class="hero-role">Information Security Student</p>
+      <div class="hero-links">
+        <a href="#about" class="btn btn-outline">소개 보기 ↓</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section-label reveal">// 01 — about me</p>
+      <h2 class="section-title reveal">소개</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            안녕하세요! 웹 프로그래밍을 공부하고 있는
+            <strong>남유진</strong>입니다. 
+            <p>웹 프로그램이 강의를 통하여 HTML과
+            CSS의 주요 요소들을 배우고 있으며, 이를 통하여 다양한 웹 페이지를
+            제작해보고 있습니다.</p>
+          </p>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="about-links-col reveal">
+          <a
+            href="https://github.com/yoojin33"
+            target="_blank"
+            class="link-card"
+          >
+            <div class="link-card-icon github">⌥</div>
+            <div class="link-card-body">
+              <strong>GitHub</strong>
+            </div>
+            <span class="link-card-arrow">↗</span>
+          </a>
+          <a
+            href="https://blog.naver.com/quarter0330"
+            target="_blank"
+            class="link-card"
+          >
+            <div class="link-card-icon blog">✦</div>
+            <div class="link-card-body">
+              <strong>블로그</strong>
+            </div>
+            <span class="link-card-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSIGNMENTS -->
+    <section id="assignments">
+      <p class="section-label reveal">// 02 — assignments</p>
+      <h2 class="section-title reveal">과제</h2>
+      <p class="assignment-p">클릭하시면 과제 결과물을 확인하실 수 있습니다.</p>
+      <div class="assignments-grid">
+        <a href="https://dbwls33.vercel.app/" class="assignment-card reveal">
+          <p class="assignment-number">01</p>
+          <h3 class="assignment-title">HTML 기초</h3>
+          <p class="assignment-desc">
+            기본 HTML 태그를 활용하여 제작하였습니다.
+          </p>
+          <div class="assignment-tech">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+          </div>
+        </a>
+
+        <a href="https://yyjj-nu.vercel.app/" class="assignment-card reveal">
+          <p class="assignment-number">02</p>
+          <h3 class="assignment-title">HTML & CSS</h3>
+          <p class="assignment-desc">
+            다양한 HTML & CSS 요소들을 활용하여 웹 사이트를 제작하였습니다.
+          </p>
+          <div class="assignment-tech">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- TEAM PROJECT -->
+    <section id="team">
+      <p class="section-label reveal">// 03 — team project</p>
+      <h2 class="section-title reveal">팀 프로젝트</h2>
+
+      <div class="team-hero reveal">
+        <h3 class="team-project-name">&lt;Web-Pedia&gt;</h3>
+        <p class="team-project-desc">
+          웹 개발 핵심 문법인 HTML, CSS의 주요 요소 및 웹 보안 취약점을 소개하는
+          웹사이트입니다. 각 요소에 대한 설명과 예시 코드를 제공하여 웹 개발
+          입문자들이 쉽게 이해할 수 있도록 구성했습니다.
+        </p>
+        <a
+          href="https://jiin33.vercel.app/"
+          target="_blank"
+          class="team-repo-link"
+        >
+          Web-Pedia 바로가기
+        </a>
+        <a
+          href="https://github.com/yoojin33/jiin33"
+          target="_blank"
+          class="team-repo-link"
+        >
+          Web-Pedia 소스 코드 보러가기
+        </a>
+      </div>
+
+      <p class="team-members-title reveal">— 팀원 소개</p>
+      <div class="members-grid">
+        <div class="member-card reveal">
+          <div class="member-avatar">함</div>
+          <p class="member-name">함유진</p>
+          <p class="member-role">팀장</p>
+          <p class="member-desc">기획 및 디자인, OWASP 조사 및 코드 작성</p>
+           <div class="links">
+            <a href="https://github.com/chael2">GitHub</a> |
+            <a href="https://chael2.tistory.com/">Blog</a>
+          </div>
+        </div>
+
+        <div class="member-card reveal">
+          <div
+            class="member-avatar"
+            style="background: linear-gradient(135deg, #ff6a9e, #ffb347)"
+          >
+            남
+          </div>
+          <p class="member-name">남유진</p>
+          <p class="member-role">팀원</p>
+          <p class="member-desc">HTML/ CSS 조사 및 코드 작성</p>     
+          <div class="links">
+            <a href="https://github.com/yoojin33">GitHub</a> |
+            <a href="https://blog.naver.com/quarter0330">Blog</a>
+          </div>
+        </div>
+
+        <div class="member-card reveal">
+          <div
+            class="member-avatar"
+            style="background: linear-gradient(135deg, #6affd4, #43b89c)"
+          >
+            조
+          </div>
+          <p class="member-name">조윤서</p>
+          <p class="member-role">팀원</p>
+          <p class="member-desc">해킹 원리 조사 및 코드 작성</p>
+           <div class="links">
+            <a href="https://github.com/avac2613">GitHub</a> |
+            <a href="https://blog.naver.com/avac-ode2613">Blog</a>
+          </div>
+        </div>
+
+        <div class="member-card reveal">
+          <div
+            class="member-avatar"
+            style="background: linear-gradient(135deg, #ffd36a, #ff8c42)"
+          >
+            홍
+          </div>
+          <p class="member-name">홍영우</p>
+          <p class="member-role">팀원</p>
+          <p class="member-desc">
+            시큐어코딩 조사 및 코드 작성
+          </p>
+           <div class="links">
+            <a href="https://github.com/hongwoo0516-commits">GitHub</a> |
+            <a href="https://blog.naver.com/youngwoo0405">Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2026 NYJ portfolio. All rights reserved.</span>
+    </footer>
+
+    <script>
+      // 햄버거 메뉴
+      const hamburger = document.getElementById('hamburger')
+      const drawer = document.getElementById('mobileDrawer')
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open')
+        drawer.classList.toggle('open')
+      })
+      function closeDrawer() {
+        hamburger.classList.remove('open')
+        drawer.classList.remove('open')
+      }
+
+      // 스크롤 reveal
+      const reveals = document.querySelectorAll('.reveal')
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible')
+              io.unobserve(e.target)
+            }
+          })
+        },
+        { threshold: 0.1 },
+      )
+      reveals.forEach((r) => io.observe(r))
+
+      // 활성 nav 항목
+      const sections = document.querySelectorAll('section[id]')
+      const navLinks = document.querySelectorAll('.nav-links a')
+      window.addEventListener('scroll', () => {
+        let current = ''
+        sections.forEach((s) => {
+          if (window.scrollY >= s.offsetTop - 100) current = s.id
+        })
+        navLinks.forEach((a) => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + current)
+        })
+      })
+    </script>
+  </body>
+</html>
