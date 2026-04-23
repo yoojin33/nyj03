@@ -175,12 +175,38 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
   padding-top: calc(var(--nav-height) + 20px);
   max-width: 1200px;
   margin: 0 auto;
   padding-left: clamp(16px, 8vw, 120px);
   padding-right: clamp(16px, 8vw, 120px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.floating-img {
+  max-width: 280px; /* 크기 조절 */
+  animation: float 3s ease-in-out infinite; /* 위아래로 둥둥 뜨는 효과 */ /* 1. 이미지의 너비 설정 (원하는 크기로 조정) */
+  height: 200px; /* 2. 이미지의 높이를 너비와 동일하게 설정 (정사각형) */
+  border-radius: 50%; /* 3. 모서리를 50%만큼 둥글게 만들어 원으로 변환 (핵심!) */
+  object-fit: cover;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .hero-greeting {
