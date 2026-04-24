@@ -223,46 +223,5 @@
       <span>© 2026 NYJ portfolio. All rights reserved.</span>
     </footer>
 
-    <script>
-      // 햄버거 메뉴
-      const hamburger = document.getElementById('hamburger')
-      const drawer = document.getElementById('mobileDrawer')
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open')
-        drawer.classList.toggle('open')
-      })
-      function closeDrawer() {
-        hamburger.classList.remove('open')
-        drawer.classList.remove('open')
-      }
-
-      // 스크롤 reveal
-      const reveals = document.querySelectorAll('.reveal')
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add('visible')
-              io.unobserve(e.target)
-            }
-          })
-        },
-        { threshold: 0.1 },
-      )
-      reveals.forEach((r) => io.observe(r))
-
-      // 활성 nav 항목
-      const sections = document.querySelectorAll('section[id]')
-      const navLinks = document.querySelectorAll('.nav-links a')
-      window.addEventListener('scroll', () => {
-        let current = ''
-        sections.forEach((s) => {
-          if (window.scrollY >= s.offsetTop - 100) current = s.id
-        })
-        navLinks.forEach((a) => {
-          a.classList.toggle('active', a.getAttribute('href') === '#' + current)
-        })
-      })
-    </script>
   </body>
 </html>
